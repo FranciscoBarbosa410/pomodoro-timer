@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <audio id="notification" src="notification.mp3"></audio>
+
+        <header class="header">
+            <h1>Pomodoro Timer</h1>
+            <span class="icon-cog" id="toggle-config">
+                ⚙
+                <span class="name-cog">
+                    Configurar
+                </span> 
+            </span>
+        </header>
+
+        <section class="status">
+            <div class="turns">1/4</div>
+            <div class="time">00:00</div>
+            <div class="time-mode">Trabalho</div>
+        </section>
+
+        <section id="drop-content" class="config-panel">
+            <div class="select-options">
+                <label for="work-time-options">Tempo (min):</label>
+                <input type="number" id="work-time-options" value="25" onchange="reset()">
+                <label for="total-turns-options">Turnos:</label>
+                <input type="number" id="total-turns-options" value="4" onchange="reset()">
+            </div>
+        </section>
+
+        <section class="controls">
+            <button class="timer-control">Iniciar</button>
+            <button class="reset-button">Reiniciar</button>
+        </section>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
