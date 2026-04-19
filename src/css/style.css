@@ -62,13 +62,14 @@ body {
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
+
+    & .time-mode {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
 }
 
-.status .time-mode {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-}
 
 .config-panel {
     display: none;
